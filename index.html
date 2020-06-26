@@ -9,7 +9,7 @@
     <meta name="description" content="CV Håkon Voldmo Kavli" />
     <meta name="author" content="Håkon Voldmo Kavli" />
 
-    <title>Håkon´s CV</title>
+    <title>Håkons CV og portefølje </title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -78,6 +78,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#kompetanse"
               >Kompetanse</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#prosjekter"
+              >Prosjekter</a
             >
           </li>
           <li class="nav-item">
@@ -810,6 +815,132 @@
     </section>
 
     <hr class="m-0" />
+    <hr class="m-0" />
+    <section
+      class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+      id="prosjekter"
+    >
+      <div class="w-100">
+        <h2 class="mb-5">Prosjekter</h2>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="resume-content">
+            <h3 class="mb-0">Diplom</h3>
+            <div class="subheading mb-3">
+              Egenutviklet app for generering av sertifiseringsbevis, skrevet i Python
+            </div>
+            <p>
+            Høsten 2018 holdt jeg mine første kurs i bruk av Questback Essentials. Den største utfordringen kom i forberedelsene til kursene, nemlig å signere kursbevis til deltakerne for hånd.
+            Jeg har aldri mestret skjønnskrift, og endte opp med å bruke over 30 minutter på å signere 5 kursbevis. 
+            Fra Januar 2019 hadde vi planlagt månedlige kurs i både Oslo og Stockholm, så jeg besluttet å lage et skript i Python for å effektivisere oppgaven.
+            </p>
+            <p>
+            Jeg startet med å undersøke biblioteker for å generere PDF-er, og landet på <a href="https://www.reportlab.com/opensource/" target= _blank>ReportLab</a>.
+            For å mate scriptet brukte jeg data fra kurspåmeldinger fra CRM-systemet vårt i Excelformat. Jeg lagde en løkke som iterte gjennom filen og genererte en PDF per deltaker.
+            For å slippe mer manuelt arbeid hektet jeg på Dropbox sitt API slik at appen kunne lagre PDF-ene sikkert, permanent og oversiktlig i en egen mappe per kursdato.
+            </p>
+
+                      <img
+            class="img-fluid img-profile mx-auto mb-2"
+            src="img/diplom2.png"
+            alt="Sertifiseringsbevis"
+          />
+                        <div class="resume-date text-md-center">
+            <p>- Eksempel på et sertifiseringsbevis</p>
+            </div>
+
+
+            I neste omgang la jeg til en utvidelse for epostutsendelse for automatisk overlevering av kurs- og sertifiseringsbevisene, 
+            via Pythons <a href="https://docs.python.org/2/library/email.mime.html" target= _blank> standardbbibliotek</a>. 
+            I hver enkelt epost la jeg ved kursbeviset som et vedlegg, samt knapp og instruksjoner til kursdeltakerne for hvordan de kunne legge til sertifiseringen på egen LinkedIn-profil.
+            </p>
+            Jeg fikk hjelp til å oversette tekstene på PDF-ene og i epostene, som jeg brukte i egne klasser for finske og svenkse diplomer. 
+            Når alt var satt sammen, ble prosessen med signering og utsteding av kyrsbevis overstått i løpet av 2 minutter, uavhengig av antall deltakere.
+            </p>
+         
+            <img
+            class="img-fluid img-profile mx-auto mb-2"
+            src="img/mail.png"
+            alt="Epost"
+          />
+           <div class="resume-date text-md-center">
+            <p>- Eksempel på et automatisk generert epost til kursdeltaker</p>
+            </div>
+
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Mars 2019</span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+
+          <div class="resume-content">
+            <h3 class="mb-0"> Spade</h3>
+            <div class="subheading mb-3">
+              Prosjekt i IN0160 - Bruksorientert design ved UiO <a href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v18/prosjekter-2018/spade/"> (Prosjektside)</a>
+            </div>
+            <p>
+            Målet for kurset var å "hvordan forståelse av brukernes behov gir grunnlag for design, og hvordan prototyper og designforslag kan gi brukerne bedre grunnlag for å formulere sine behov".
+            Vi ble bedt om å danne en gruppe, så planlegge og gjennomføre et prosjekt, der design av en digital prototype (uten skjerm) for og med en valgt brukergruppe var sentralt.
+            Vår gruppe valgte folkebibliotekene i Oslo som domene og utviklet en prototype for å forbedre deres hentehyller.
+            </p>
+            <p>
+            I tidlig fase av prosjektet gjorde vi observasjon av biblioteksbrukere og ekspertintervjuer med biblioteksansatte for å lære mer om tilbudene og ulike utfordringer brukerne møter.
+            I neste omgang ilandet vi på å forbedre "hentehyller", bibliotekes tilbud for å støtte avhenting av reservert materiale.
+            </p>
+
+            <img
+              class="img-fluid img-profile mx-auto mb-2"
+              src="img/skisser.png"
+              alt="Lavoppløselige skisser, for testing protypeideer"
+            />
+            <div class="resume-date text-md-center">
+            <p> - Lavoppløselige skisser, for testing protypeideer</p>
+            </div>
+           
+            <p>
+            Vi gjennomførte prosjektet i syv iterasjoner. Vi designet en modulær prototype som lot oss skifte ut- og legge til nye deler og funksjoner mellom hver iterasjon.
+            Via iterasjonene implementerte vi endringer ut ifra brukernes behov, slik vi hadde forstått dem fra brukertesting. 
+            Hver iterasjon endte i en evaluering med brukergruppen, som ga oss gode pekere for veien videre.
+            </p>
+            <img
+            class="img-fluid img-profile mx-auto mb-2"
+            src="img/evaluering.png"
+            alt="Evaluering med brukere"
+          />
+                      <div class="resume-date text-md-center">
+            <p>- Fra evaluering med brukere</p>
+            </div>
+
+          <p> Min rolle i prosjektet besto av oppgaver. 
+          Jeg virket som møteleder og referent i våre sprintmøter, bisto med datainnsamling (intervjuer/observasjon), brukertesting og rapportering.
+          Jeg lærte mye om gruppearbeid, designprosessen og brukermedvirkning. Vi la ned utrolig mye arbeid, og ble veldig fornøyd med sluttproduktet.
+          Den siste prototypen besto av tre Arduino Uno mikrokontrollere, to RFID-lesere, powerbanks og LED-lys med tilbehør:
+            </p>
+            <img
+            class="img-fluid img-profile mx-auto mb-2"
+            src="img/Prototype.png"
+            alt="Sluttproduktet: Prototypen ''Hentehylla ''" 
+          />
+                              <div class="resume-date text-md-center">
+            <p>- Sluttproduktet: Prototypen "Hentehylla"</p>
+            </div>
+
+          </div>
+
+          <div class="resume-date text-md-right">
+            <span class="text-primary"
+              >Januar 2018 - Juni 2018
+            </span>
+          </div>
+        </div>
+
+
+        
+    </section>
 
     <section
       class="resume-section p-3 p-lg-5 d-flex align-items-center"
