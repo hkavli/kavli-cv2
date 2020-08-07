@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -9,8 +9,17 @@
     <meta name="description" content="CV Håkon Voldmo Kavli" />
     <meta name="author" content="Håkon Voldmo Kavli" />
 
-    <title>Håkons CV og portefølje </title>
+    <title>Håkon Kavlis CV og portefølje</title>
 
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4f6980">
+    <meta name="msapplication-TileColor" content="#4f6980">
+    <meta name="theme-color" content="#4f6980">
+    
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -30,6 +39,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
+<!-- Toppen -->
   <body id="page-top">
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -94,6 +104,7 @@
       </div>
     </nav>
 
+<!-- Om -->
     <div class="container-fluid p-0">
       <section
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -136,7 +147,7 @@
     </div>
 
     <hr class="m-0" />
-
+<!-- Tidslinje -->
     <section
       class="resume-section p-3 p-lg-5 d-flex justify-content-center"
       id="tidslinje"
@@ -205,6 +216,7 @@
       </div>
     </section>
 
+<!-- Erfaring -->
     <hr class="m-0" />
     <section
       class="resume-section p-3 p-lg-5 d-flex justify-content-center"
@@ -357,6 +369,7 @@
       </div>
     </section>
 
+<!-- Utdanning -->
     <hr class="m-0" />
     <section
       class="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -613,6 +626,7 @@
       </div>
     </section>
 
+<!-- Kompetanse -->
     <section
       class="resume-section p-3 p-lg-5 d-flex align-items-center"
       id="kompetanse"
@@ -714,7 +728,7 @@
                     <td>Viderekommen</td>
                   </tr>
                   <tr>
-                    <td><i class="fab fa-"></i>PostgreSQL</td>
+                    <td><i class="fab fa-"></i> PostgreSQL</td>
                     <td text-align="center">
                       <script>
                         document.write(new Date().getFullYear() - 2018);
@@ -722,6 +736,37 @@
                     </td>
                     <td>Viderekommen</td>
                   </tr>
+
+                  <tr>
+                    <td><i class="fab fa-html5"></i> HTML</td>
+                    <td text-align="center">
+                      <script>
+                        document.write(new Date().getFullYear() - 2019);
+                      </script>
+                    </td>
+                    <td>Grunnleggende</td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fab fa-css3-alt"></i> CSS</td>
+                    <td text-align="center">
+                      <script>
+                        document.write(new Date().getFullYear() - 2019);
+                      </script>
+                    </td>
+                    <td>Grunnleggende</td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fab fa-js-square"></i> JavaScript</td>
+                    <td text-align="center">
+                      <script>
+                        document.write(new Date().getFullYear() - 2019);
+                      </script>
+                    </td>
+                    <td>Grunnleggende</td>
+                  </tr>
+
                   <tr>
                     <td><i class="fab fa-salesforce"></i> Salesforce</td>
                     <td>
@@ -752,7 +797,6 @@
                 </tbody>
               </table>
             </div>
-          </div>
           <div class="card">
             <div class="card-header" id="headingSpraak">
               <h2 class="mb-0">
@@ -814,7 +858,7 @@
       </div>
     </section>
 
-    <hr class="m-0" />
+<!-- Prosjekter -->
     <hr class="m-0" />
     <section
       class="resume-section p-3 p-lg-5 d-flex justify-content-center"
@@ -943,6 +987,7 @@
         
     </section>
 
+<!-- Interesser-->
     <section
       class="resume-section p-3 p-lg-5 d-flex align-items-center"
       id="interesser"
@@ -978,51 +1023,16 @@
 
     <hr class="m-0" />
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Div. JS -->
+    <!-- 1. Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+    <!-- 2. Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- 3. Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
-    <script>
-      var months = [
-        "Januar",
-        "Februar",
-        "Mars",
-        "April",
-        "Mai",
-        "Juni",
-        "Juli",
-        "August",
-        "September",
-        "Oktober",
-        "November",
-        "Desember"
-      ];
-      var now = new Date();
-      var thisMonth = months[now.getMonth()];
-      var output = document.getElementById("output");
-      console.log(thisMonth);
-
-      if (output.textContent != undefined) {
-        output.textContent = thisMonth;
-      } else {
-        output.innerText = thisMonth;
-      }
-    </script>
-    <script>
-      $(document).ready(function() {
-        $("button").on("hide.bs.collapse", function() {
-          $(".btn").html('<span class="fas fa-plus"></span> Flere detaljer');
-        });
-        $("button").on("show.bs.collapse", function() {
-          $(".btn").html('<span class="fas fa-minus"></span> Færre detaljer');
-        });
-      });
-    </script>
+    <script src="js/months.js"></script>    
   </body>
 </html>
