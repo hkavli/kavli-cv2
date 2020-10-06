@@ -10,6 +10,8 @@ body {
     "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
   color: #868e96;
+  text-align: center;
+  text-justify: inter-word;
 }
 
 @media (min-width: 992px) {
@@ -188,4 +190,13 @@ a:active {
 }
 #additinalTestInput:checked ~ #additinalTest {
   display: block;
+}
+
+#om {
+  text-align: center;
+  text-justify: inter-word;
+}
+#erfaring {
+  text-align: left;
+  text-justify: inter-word;
 }
